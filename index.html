@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irisi - Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message-us">Message Us</a></li>
+                </ul>
+            </nav>
+            <h1 id="welcome-message">Hi Harfi, Welcome To Website</h1>
+            <p>Irisi adalah website lukiharu pertama</p>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Innovative Solutions for Your Business</h2>
+                <p>We provide cutting-edge technology solutions to help your business grow in the digital era.</p>
+                <a href="#message-us" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="banner">
+                    <img src="https://via.placeholder.com/1200x400" alt="Company Banner">
+                </div>
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>Founded in 2023, Irisi is a leading technology company specializing in web development and digital solutions. Our team of experts is dedicated to delivering high-quality products that meet our clients' needs.</p>
+                </div>
+                <div class="vision-mission">
+                    <div class="vision">
+                        <h3>Vision</h3>
+                        <p>To be the most trusted technology partner for businesses worldwide.</p>
+                    </div>
+                    <div class="mission">
+                        <h3>Mission</h3>
+                        <ul>
+                            <li>Deliver innovative and reliable solutions</li>
+                            <li>Provide exceptional customer service</li>
+                            <li>Continuously improve our skills and technologies</li>
+                            <li>Build long-term partnerships with our clients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>E-commerce Platform</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Corporate Website</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Mobile Application</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="headquarter" class="headquarter-section">
+        <div class="container">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">
+                    <h3>Jakarta</h3>
+                    <p>Jl. Sudirman No. 123</p>
+                </div>
+                <div class="location">
+                    <h3>Bandung</h3>
+                    <p>Jl. Dago No. 456</p>
+                </div>
+                <div class="location">
+                    <h3>Surabaya</h3>
+                    <p>Jl. Tunjungan No. 789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="message-us" class="message-section">
+        <div class="container">
+            <h2>Message Us</h2>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+            <div id="submittedData" class="submitted-data">
+                <h3>Your Submitted Information</h3>
+                <p id="current-time"></p>
+                <div class="data-display">
+                    <p><strong>Name:</strong> <span id="display-name"></span></p>
+                    <p><strong>Email:</strong> <span id="display-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+                    <p><strong>Gender:</strong> <span id="display-gender"></span></p>
+                    <p><strong>Message:</strong> <span id="display-message"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>1366-578</p>
+            <p>Created By RenoU</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
